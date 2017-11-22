@@ -888,6 +888,8 @@ void discord_parse_message(struct im_connection *ic, gchar *buf, guint64 size)
     // Ignoring those for now
   } else if (g_strcmp0(event, "CHANNEL_PINS_ACK") == 0) {
     // Ignoring those for now
+  } else if (g_strcmp0(event, "CHANNEL_PINS_UPDATE") == 0) {
+    // Ignoring those for now
   } else {
     g_print("%s: unhandled event: %s\n", __func__, event);
     g_print("%s\n", buf);
