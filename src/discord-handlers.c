@@ -878,6 +878,8 @@ void discord_parse_message(struct im_connection *ic, gchar *buf, guint64 size)
     // Ignoring those for now
   } else if (g_strcmp0(event, "GUILD_ROLE_DELETE") == 0) {
     // Ignoring those for now
+  } else if (g_strcmp0(event, "GUILD_ROLE_CREATE") == 0) {
+    // Ignoring those for now
   } else if (g_strcmp0(event, "GUILD_EMOJIS_UPDATE") == 0) {
     // Ignoring those for now
   } else if (g_strcmp0(event, "GUILD_INTEGRATIONS_UPDATE") == 0) {
