@@ -876,6 +876,8 @@ void discord_parse_message(struct im_connection *ic, gchar *buf, guint64 size)
     // Ignoring those for now
   } else if (g_strcmp0(event, "USER_UPDATE") == 0) {
     // Ignoring those for now
+  } else if (g_strcmp0(event, "USER_SETTINGS_UPDATE") == 0) {
+    // Ignoring those for now
   } else if (g_strcmp0(event, "MESSAGE_ACK") == 0) {
     // Ignoring those for now
   } else if (g_strcmp0(event, "MESSAGE_DELETE") == 0) {
